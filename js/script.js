@@ -3,3 +3,5 @@ $(function () {
   const text = $('li[class^="sample"]').text();
   console.log(text);
 });
+
+//部分一致（*） 後方一致（$）
