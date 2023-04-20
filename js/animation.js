@@ -1,7 +1,7 @@
 $(function () {
-  //id属性がfadeOutの要素がクリックされたら
-  $("#fadeOut").on("click", function () {
-    //フェードアウトする
-    $(".box").fadeOut();
+  //id属性がfadeToggleの要素がクリックされたら
+  $("#fadeToggle").on("click", function () {
+    //フェードイン　or　フェードアウトする
+    $(".box").fadeToggle();
   });
 });
