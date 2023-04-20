@@ -28,4 +28,16 @@ $(function () {
       $("#check").prop("disabled", true);
     }
   });
+
+  //1.趣味のチェックボックスが変更されたら
+  $('[name="hoby"]').on("change", function () {
+    //2., 3. チェックの数が3より大きかったら
+    if ($('[name="hoby"]:checked').length > 3) {
+      //4. チェックを付けようとしたものだけチェックを外す
+      $(this).prop("checked", false);
+
+      //5.注意を促すメッセージを表示する
+      alert("3つまでしか選択できません");
+    }
+  });
 });
